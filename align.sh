@@ -1,7 +1,8 @@
-fastqdir='/home/student9/muiiMNGS2/fastqdir'
-refdir='/home/student9/muiiMNGS2/refs'
-alignment='home/student9/muiiMNGS2/alignment'
+fastqdir='$HOME/inputdir'
+refdir='$HOME/refs'
+alignment='$HOME/alignment'
 suffix='_R1_val_1.fq'
+fmt='fq'
 
 for sample in $(ls $fastqdir/*R1*.fq); do
 	p=$(basename $sample $suffix)
