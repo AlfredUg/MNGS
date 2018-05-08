@@ -1,6 +1,6 @@
-fastqdir='$HOME/inputdir'
-refdir='$HOME/refs'
-alignment='$HOME/alignment'
+fastqdir='$HOME/MNGS2/inputdir'
+refdir='$HOME/MNGS2/refs'
+alignment='$HOME/MNGS2/alignment'
 suffix='_R1_val_1.fq'
 fmt='fq'
 
