@@ -1,5 +1,5 @@
-fastqdir='/home/student9/muiiMNGS2/fastqdir'
-trimdir='/home/student9/muiiMNGS2/trimmed'
+fastqdir='$HOME/MNGS2/fastqdir'
+trimdir='$HOME/MNGS2/trimmed'
 suffix='_R1_val_1.fq'
 
 for sample in $(ls $fastqdir/*R1*.fq); do
