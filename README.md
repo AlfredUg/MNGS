@@ -1,5 +1,4 @@
 # MNGS Training
-See full description at the [wiki](https://github.com/AlfredUg/MNGS/wiki).
 
 ### **Introduction**
 This is a follow up on the series of bioinformatics trainings that happen at Uganda Virus Research Institute facilitated by H3ABioNet. This particular one focuses on the main procedure of metagenomics NGS data  analysis. Custom scripts are used but the users should take note that, the required software is available and accessible on respective machines. It may also be necessary to change paths to main directories to fit ones file system. This can always be changed at the top of each script.
