@@ -70,7 +70,7 @@ quast.py -t 4 -f --meta contigs.fa -o .
 ```
 
 ### **Gene predicition**
-For gene prediction proceeds using prodigal software. In this example, the output includes predicted genes, coded protein sequences and an annotation file. The annotation file has features, corresponding length and location on the genome among others. See full description of  at <p GFF format href="#">
+For gene prediction proceeds using prodigal software. In this example, the output includes predicted genes, coded protein sequences and an annotation file. The annotation file has features, corresponding length and location on the genome among others. See full description of  at <a GFF format href="http://genome.ucsc.edu/FAQ/FAQformat.html#format3">
 ```{r,eval=FALSE,error=FALSE,warning=FALSE,message=FALSE,echo=TRUE}
 mkdir genes
 cd genes
