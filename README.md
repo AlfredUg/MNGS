@@ -38,6 +38,8 @@ There is need to get rid of host DNA sequences that could have contaminated the 
 
 There is a copy of the human genome on this system, so we shall share that into every one's working directory.
 Create a directory `hostgenome` which will harbour the host genome.
+Note: Change the genome name accordingly.
+
 ```{r,eval=FALSE,error=FALSE,warning=FALSE,message=FALSE,echo=TRUE}
 mkdir hostgenome
 bwa index Gh37.fa
