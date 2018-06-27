@@ -34,14 +34,19 @@ trim_galore -q 25 -l 75 --dont_gzip --clip_R1 16 --clip_R2 16 --paired ../data/H
 If all goes well, trimmed reads will be available in trimmed. You may consider looking at the trimmed reads using `fastqc` to check the improvement made by `trim_galore`.
 
 #### **Remove host sequences**
-There is need to get rid of host DNA sequences that could have contaminated the data earlier in the sampling and extraction stage. This is done by mapping the reads to host reference genome and picking the unmapped sequences. At this point, we create a directory to store host-free sequence data. `Samtools` and `bedtools` are the key tools used for this purpose.
+There is need to get rid of host DNA sequences that could have contaminated the data earlier in the sampling and extraction stage. This is done by mapping the reads to host reference genome and picking the unmapped sequences. 
 
 There is a copy of the human genome on this system, so we shall share that into every one's working directory.
 Create a directory `hostgenome` which will harbour the host genome.
 ```{r,eval=FALSE,error=FALSE,warning=FALSE,message=FALSE,echo=TRUE}
+mkdir hostgenome
+bwa index Gh37.fa
+```
+
+At this point, we create a directory to store host-free sequence data. `Samtools` and `bedtools` are the key tools used for this purpose.
+```{r,eval=FALSE,error=FALSE,warning=FALSE,message=FALSE,echo=TRUE}
 mkdir hostfree
 cd hostfree
-bwa index ../hostgenome/Gh37.fa
 bwa aln ../hostgenome/Gh37.fa ../trimmed/HMP_GUT_SRS052697.25M.1_trim.fastq > HMP_GUT_SRS052697.25M.1.sai
 bwa aln ../hostgenome/Gh37.fa ../trimmed/HMP_GUT_SRS052697.25M.2_trim.fastq > HMP_GUT_SRS052697.25M.2.sai
 bwa sampe ../hostgenome/Gh37.fa HMP_GUT_SRS052697.25M.1.sai HMP_GUT_SRS052697.25M.2.sai ../trimmed/HMP_GUT_SRS052697.25M.1_trim.fastq ../trimmed/HMP_GUT_SRS052697.25M.2_trim.fastq > reads12_alignment.sam
