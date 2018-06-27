@@ -27,7 +27,7 @@ Once this is done, navigate to `qcresults` and view the ".html" files. This repo
 ### **Data quality trimming**
 We use `trim_galore` for quality and adapter trimming. Depending on the qc results, it would be necessary to change some parameters used here accordingly. This script clips off the first 16 bases of the reads from the 5' end. In addition, it removes bases with phred quality less than 25 on the 3' end of the reads. We need to store quality trimmed reads, as such, in WGS directory, make a sub directory `trimmed`.
 ```{r,eval=FALSE,error=FALSE,warning=FALSE,message=FALSE,echo=TRUE}
-mkdir "$HOME/WGS/trimmed"
+mkdir $HOME/WGS/trimmed
 trim_galore -q 25 -l 75 --dont_gzip --clip_R1 16 --clip_R2 16 --paired ../data/HMP_GUT_SRS052697.25M.1.fastq ../data/HMP_GUT_SRS052697.25M.2.fastq -o .
 ```
 
