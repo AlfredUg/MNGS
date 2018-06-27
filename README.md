@@ -47,8 +47,8 @@ At this point, we create a directory to store host-free sequence data. `Samtools
 ```{r,eval=FALSE,error=FALSE,warning=FALSE,message=FALSE,echo=TRUE}
 mkdir hostfree
 cd hostfree
-bwa aln ../hostgenome/Gh37.fa ../trimmed/HMP_GUT_SRS052697.25M.1_trim.fastq > HMP_GUT_SRS052697.25M.1.sai
-bwa aln ../hostgenome/Gh37.fa ../trimmed/HMP_GUT_SRS052697.25M.2_trim.fastq > HMP_GUT_SRS052697.25M.2.sai
+bwa aln ../hostgenome/Gh37.fa ../data/HMP_GUT_SRS052697.25M.1_trim.fastq > HMP_GUT_SRS052697.25M.1.sai
+bwa aln ../hostgenome/Gh37.fa ../data/HMP_GUT_SRS052697.25M.2_trim.fastq > HMP_GUT_SRS052697.25M.2.sai
 bwa sampe ../hostgenome/Gh37.fa HMP_GUT_SRS052697.25M.1.sai HMP_GUT_SRS052697.25M.2.sai ../trimmed/HMP_GUT_SRS052697.25M.1_trim.fastq ../trimmed/HMP_GUT_SRS052697.25M.2_trim.fastq > reads12_alignment.sam
 ```
 
