@@ -1,7 +1,7 @@
 # MNGS Training
 
-### **Introduction**
-This is a follow up on the series of bioinformatics trainings that happen at Uganda Virus Research Institute facilitated by H3ABioNet. This particular one focuses on the main procedure of metagenomics NGS data  analysis. Custom scripts are used but the users should take note that, the required software is available and accessible on respective machines. It may also be necessary to change paths to main directories to fit ones file system. This can always be changed at the top of each script.
+## **Introduction**
+This is a follow up on the series of bioinformatics training sessions for the EAST African Network for Bioinformatics Trainin (EANBiT) held at KEMRI wellcome Trust, Kilifi Campus. This session focuses on the main procedure of  shotgun metagenome assembly and gene prediction.
 
 ### **Getting started**
 Create a directory named "MNGS2" in your home directory. This is where the analysis will be carried out. As we go on, we shall be creating sub-directories accordingly to ensure that intermediate outputs can be refered to easily whenever needed for downstream analyses. 
