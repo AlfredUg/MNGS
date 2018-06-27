@@ -69,4 +69,10 @@ To evaluate and assess the assembly, we use `quast`. This will provide a summary
 quast.py -t 4 -f --meta contigs.fa -o .
 ```
 
-### **Taxonomic identification**
+### **Gene predicition**
+For gene prediction proceeds using prodigal software. In this example, the output includes predicted genes, coded protein sequences and an annotation file. The annotation file has features, corresponding length and location on the genome among others. See full description of  at <p GFF format href="#">
+```{r,eval=FALSE,error=FALSE,warning=FALSE,message=FALSE,echo=TRUE}
+mkdir genes
+cd genes
+prodigal -a genes.fa -d proteins.fa -i ../denovo/contigs.fa -f gff -p meta > annotation.gff
+```
