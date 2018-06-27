@@ -1,5 +1,3 @@
-# MNGS Training
-
 ## **Introduction**
 This is a follow up on the series of bioinformatics training sessions for the EAST African Network for Bioinformatics Trainin (EANBiT) held at KEMRI wellcome Trust, Kilifi Campus. This session focuses on the main procedure of  shotgun metagenome assembly and gene prediction.
 
